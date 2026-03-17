@@ -1,279 +1,371 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greater Faith Grace Bible Church - Videos</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  </head>
-  <body class="bg-slate-50 text-slate-900 antialiased font-[Inter] overflow-x-hidden">
-    
-    <!-- Unified Header -->
-    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="/index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
-          <!-- Will use the logo from the download -->
-          <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" alt="GFGBC Logo" class="h-12 w-12 object-contain shrink-0" />
-          <span class="text-slate-900 text-lg lg:text-xl font-black tracking-tight whitespace-nowrap hidden sm:block uppercase">GFGBC</span>
-        </a>
-        
-        <nav class="hidden xl:flex items-center gap-8">
-          <a href="/index.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Home</a>
-          <a href="/staff.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Staff</a>
-          <a href="/expect.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">What to Expect</a>
-          <a href="/sermons.html" class="text-sm font-bold text-[var(--color-primary)]">Videos</a>
-          <div class="relative group">
-            <button class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-1">Ministries <span class="material-symbols-outlined text-sm">expand_more</span></button>
-            <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 flex flex-col">
-              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Groups</span>
-              <a href="/mens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Men's Ministry</a>
-              <a href="/womens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Women's Ministry (G.L.O.W.)</a>
-              <a href="/prayer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Prayer Warriors</a>
-              <div class="h-px bg-slate-100 my-1 mx-4"></div>
-              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Outreach & Support</span>
-              <a href="/compassion.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Compassion Outreach</a>
-              <a href="/grief-share.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Grief Share</a>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greater Faith Grace Bible Church - Videos</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased font-[Inter] overflow-x-hidden">
+
+  <!-- Unified Header -->
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+        <!-- Will use the logo from the download -->
+        <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" alt="GFGBC Logo"
+          class="h-12 w-12 object-contain shrink-0" />
+        <span
+          class="text-slate-900 text-lg lg:text-xl font-black tracking-tight whitespace-nowrap hidden sm:block uppercase">GFGBC</span>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-8">
+        <a href="/index.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Home</a>
+        <a href="/staff.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Staff</a>
+        <a href="/expect.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">What to
+          Expect</a>
+        <a href="/sermons.html" class="text-sm font-bold text-[var(--color-primary)]">Videos</a>
+        <div class="relative group">
+          <button
+            class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-1">Ministries
+            <span class="material-symbols-outlined text-sm">expand_more</span></button>
+          <div
+            class="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 flex flex-col">
+            <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Groups</span>
+            <a href="/mens-ministry.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Men's
+              Ministry</a>
+            <a href="/womens-ministry.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Women's
+              Ministry (G.L.O.W.)</a>
+            <a href="/prayer.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Prayer
+              Warriors</a>
+            <div class="h-px bg-slate-100 my-1 mx-4"></div>
+            <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Outreach &
+              Support</span>
+            <a href="/compassion.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Compassion
+              Outreach</a>
+            <a href="/grief-share.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Grief
+              Share</a>
           </div>
-          <a href="/connect.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Connect</a>
-        </nav>
-        
-        <div class="flex items-center gap-4">
-          <a href="#" class="bg-[var(--color-primary)] text-white px-6 py-2.5 rounded text-sm font-bold tracking-wide hover:shadow-lg hover:shadow-[var(--color-primary)]/30 transition-all transform hover:-translate-y-0.5 uppercase">Give</a>
-          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-900 border border-slate-900 rounded-sm">
-            <span class="material-symbols-outlined">menu</span>
-          </button>
+        </div>
+        <a href="/connect.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Connect</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#"
+          class="bg-[var(--color-primary)] text-white px-6 py-2.5 rounded text-sm font-bold tracking-wide hover:shadow-lg hover:shadow-[var(--color-primary)]/30 transition-all transform hover:-translate-y-0.5 uppercase">Give</a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-900 border border-slate-900 rounded-sm">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200">
+      <nav class="flex flex-col p-4 shadow-xl">
+        <a href="/index.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Home</a>
+        <a href="/staff.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Staff</a>
+        <a href="/expect.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">What to Expect</a>
+        <a href="/sermons.html" class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Videos</a>
+        <div class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Ministries</div>
+        <a href="/mens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Men's
+          Ministry</a>
+        <a href="/womens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">G.L.O.W.
+          Women</a>
+        <a href="/prayer.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Prayer Warriors</a>
+        <a href="/compassion.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Compassion
+          Outreach</a>
+        <a href="/grief-share.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Grief Share</a>
+        <a href="/connect.html" class="p-3 text-slate-700 font-semibold">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-20">
+
+    <!-- Featured Sermon (Dark Theme for Video Focus) -->
+    <section
+      class="bg-[var(--color-navy-deep)] py-12 px-6 lg:px-20 border-b-[8px] border-[var(--color-primary)] relative animate-on-scroll">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+          <div>
+            <span
+              class="bg-[var(--color-accent)] text-[var(--color-navy-deep)] px-3 py-1 rounded-sm text-xs font-black uppercase tracking-widest inline-block mb-4 shadow-[0_0_15px_rgba(255,255,255,0.1)]">Most
+              Recent Service</span>
+            <h1
+              class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tighter uppercase mb-4">
+              Sermon Video Library</h1>
+            <p class="text-slate-400 text-lg md:text-xl font-medium">Living by Grace: Weekly teachings for your
+              spiritual journey.</p>
+          </div>
+        </div>
+
+        <div
+          class="relative group cursor-pointer overflow-hidden bg-black aspect-video shadow-2xl border border-white/10 group-hover:border-[var(--color-primary)] transition-colors">
+          <div
+            class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 saturate-50 group-hover:saturate-100 opacity-60 group-hover:opacity-80"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs2oTfP-FHzqgS01-zzVjnj4KCxiMGcQjLtSIbQ0P5XG83U8Qn4YPtI-2yEcih3tIDowtKDWo9m30GbTr398GVhFJ7ex0PmokjG85bKBiwjdEf1V_1m6jEXd_cAzggwFDlXAA_6287fyieFbCF0TlHH8UAsOl0vgFptvtlJ7hnTAlpTKv15Z0eDRbUNfBJI9ASeOSCtnwHP8gmS2Vp17fZtNfOvCigFex00_YM7ekq1Mf4Rp4nj7J7u53MGTHhDJmA1wXA9vDrcbM");'>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <button
+              class="flex shrink-0 items-center justify-center rounded-none size-20 md:size-24 border-4 border-white text-white shadow-2xl hover:bg-white hover:text-black transition-all group-hover:scale-110 duration-300">
+              <span class="material-symbols-outlined !text-5xl md:!text-6xl ml-2">play_arrow</span>
+            </button>
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="bg-black/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1 border border-white/20 uppercase tracking-widest">48:22</span>
+              <span class="text-[var(--color-primary)] font-bold text-xs uppercase tracking-widest">• Recorded last
+                Sunday</span>
+            </div>
+            <h2 class="text-white text-3xl md:text-5xl font-black mb-2 uppercase tracking-tight">Faith in Action: Living
+              the Word</h2>
+            <p class="text-white/70 text-lg font-semibold tracking-wide">Lead Pastor: Dr. Samuel Rivers</p>
+          </div>
         </div>
       </div>
-      
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200">
-        <nav class="flex flex-col p-4 shadow-xl">
-          <a href="/index.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Home</a>
-          <a href="/staff.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Staff</a>
-          <a href="/expect.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">What to Expect</a>
-          <a href="/sermons.html" class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Videos</a>
-          <div class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Ministries</div>
-          <a href="/mens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Men's Ministry</a>
-          <a href="/womens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">G.L.O.W. Women</a>
-          <a href="/prayer.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Prayer Warriors</a>
-          <a href="/compassion.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Compassion Outreach</a>
-          <a href="/grief-share.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Grief Share</a>
-          <a href="/connect.html" class="p-3 text-slate-700 font-semibold">Connect</a>
-        </nav>
-      </div>
-    </header>
+    </section>
 
-    <main class="w-full pt-20">
-      
-      <!-- Featured Sermon (Dark Theme for Video Focus) -->
-      <section class="bg-[var(--color-navy-deep)] py-12 px-6 lg:px-20 border-b-[8px] border-[var(--color-primary)] relative animate-on-scroll">
-        <div class="max-w-7xl mx-auto">
-          <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
-            <div>
-              <span class="bg-[var(--color-accent)] text-[var(--color-navy-deep)] px-3 py-1 rounded-sm text-xs font-black uppercase tracking-widest inline-block mb-4 shadow-[0_0_15px_rgba(255,255,255,0.1)]">Most Recent Service</span>
-              <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tighter uppercase mb-4">Sermon Video Library</h1>
-              <p class="text-slate-400 text-lg md:text-xl font-medium">Living by Grace: Weekly teachings for your spiritual journey.</p>
-            </div>
-          </div>
-          
-          <div class="relative group cursor-pointer overflow-hidden bg-black aspect-video shadow-2xl border border-white/10 group-hover:border-[var(--color-primary)] transition-colors">
-            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 saturate-50 group-hover:saturate-100 opacity-60 group-hover:opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs2oTfP-FHzqgS01-zzVjnj4KCxiMGcQjLtSIbQ0P5XG83U8Qn4YPtI-2yEcih3tIDowtKDWo9m30GbTr398GVhFJ7ex0PmokjG85bKBiwjdEf1V_1m6jEXd_cAzggwFDlXAA_6287fyieFbCF0TlHH8UAsOl0vgFptvtlJ7hnTAlpTKv15Z0eDRbUNfBJI9ASeOSCtnwHP8gmS2Vp17fZtNfOvCigFex00_YM7ekq1Mf4Rp4nj7J7u53MGTHhDJmA1wXA9vDrcbM");'>
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <button class="flex shrink-0 items-center justify-center rounded-none size-20 md:size-24 border-4 border-white text-white shadow-2xl hover:bg-white hover:text-black transition-all group-hover:scale-110 duration-300">
-                <span class="material-symbols-outlined !text-5xl md:!text-6xl ml-2">play_arrow</span>
-              </button>
-            </div>
-            <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-              <div class="flex items-center gap-4 mb-4">
-                <span class="bg-black/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1 border border-white/20 uppercase tracking-widest">48:22</span>
-                <span class="text-[var(--color-primary)] font-bold text-xs uppercase tracking-widest">• Recorded last Sunday</span>
-              </div>
-              <h2 class="text-white text-3xl md:text-5xl font-black mb-2 uppercase tracking-tight">Faith in Action: Living the Word</h2>
-              <p class="text-white/70 text-lg font-semibold tracking-wide">Lead Pastor: Dr. Samuel Rivers</p>
-            </div>
-          </div>
+    <!-- Search & Filters -->
+    <section class="border-b border-slate-200 bg-white sticky top-20 z-40 animate-on-scroll">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div class="relative w-full md:w-1/2 lg:w-1/3">
+          <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+          <input
+            class="w-full bg-slate-100 border-none rounded-sm py-3 pl-12 pr-4 text-slate-900 focus:ring-2 focus:ring-[var(--color-primary)] outline-none transition-all placeholder-slate-400 font-medium"
+            placeholder="Search by title, speaker, or scripture..." type="text" />
         </div>
-      </section>
 
-      <!-- Search & Filters -->
-      <section class="border-b border-slate-200 bg-white sticky top-20 z-40 animate-on-scroll">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row gap-4 items-center justify-between">
-          <div class="relative w-full md:w-1/2 lg:w-1/3">
-            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-            <input class="w-full bg-slate-100 border-none rounded-sm py-3 pl-12 pr-4 text-slate-900 focus:ring-2 focus:ring-[var(--color-primary)] outline-none transition-all placeholder-slate-400 font-medium" placeholder="Search by title, speaker, or scripture..." type="text"/>
-          </div>
-          
-          <div class="flex gap-2 w-full md:w-auto overflow-x-auto hide-scrollbar">
-            <button class="bg-[var(--color-primary)] text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">All Services</button>
-            <button class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">Series</button>
-            <button class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">Speakers</button>
-            <button class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase flex items-center gap-1">Date <span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Video Grid -->
-      <section class="py-20 px-6 max-w-7xl mx-auto min-h-[50vh]">
-        <div class="flex justify-between items-end mb-12 animate-on-scroll">
-          <h3 class="text-3xl font-black uppercase tracking-tight text-slate-900 border-l-[6px] border-[var(--color-primary)] pl-4">Past Services</h3>
-          <div class="hidden sm:flex items-center gap-2 text-slate-500 text-sm font-semibold">
-            <span>Showing 12 of 248 videos</span>
-            <span class="material-symbols-outlined text-[var(--color-primary)]">tune</span>
-          </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16">
-          
-          <!-- Video Card 1 -->
-          <div class="group cursor-pointer animate-on-scroll">
-            <div class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7TbR89S257n9FvKfT9f2rCzZ6Pe-AyCktkc6xwFFzK_LAXMKgYEDmFt5uPbWi3fur-dbxhrSVdSYFyOed6dvbNr3ZeveD8SUIHv4geBXnSds2sZ7QVP-KNXjB4gqaSwJqGhSRsEPQhx9qBHNTI8iJSiXh-FbHcEK387y0Bt4Djotg2kQhJpkzjQTmv_N8wO9X-qa6kIsLxVoDgMbyhP1iYIJwiP6p2hKiz2QAR2p4qfICoTud5yiXv7OVVmw7dEtM7xQLxwnf384");'>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">42:15</div>
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
-                <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
-              </div>
-            </div>
-            <div>
-              <div class="text-xs text-[var(--color-primary)] font-black uppercase tracking-widest mb-2 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span> Grace Series
-              </div>
-              <h4 class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">The Unfailing Promise of Peace</h4>
-              <div class="flex items-center gap-3">
-                <div class="size-8 bg-slate-200 bg-cover grayscale" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPDk28L-wzUeLSp_q2cndNLRaB3t83ovJwrMvs8GC-I7tasK1ZV3F4kkrLIyEJ_e6aQKYqo39POFu5ygvt6qVxHTLRJT8MM-JUCxD9EUhCeDpCDCXp5IxY2wbbLrBtoCJR1h0i8lyNMeJsOSiZCRyjW_OCsFFvDMuSyEOgDJ4UUXHPrZZ6wmyDby-U3-f1asgzB7YD45a3xydatmBDzcTVyakkEBypR-667dt1QOPr02fYX3Z0zcDljhK7R22rMYeFtLsUJzANmCI");'></div>
-                <div class="flex flex-col">
-                  <span class="text-sm font-bold text-slate-800">Pastor Michael Chen</span>
-                  <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 22, 2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Card 2 -->
-          <div class="group cursor-pointer animate-on-scroll delay-100">
-            <div class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy6hOu5-WtEKROGinGYTl9F-JFw18B-Avv0YLAect4R0AJNqdjjpMPcS5RChAkgEA2STrU1RlSX6N3Ouu9vAkln3EQqaY3cNf3FeCasuQywOnvIc1V5JR6K5ITTMSnO3ANvDtccAvnfSoI_VfF3BhiK0ilHYj252smfuHlz7xyA5ZZdVQzMO-3XC6oJzDtchfYgrf2m_HFdrhdO99p9tQjun-5hAmf4qh0i3LdU6iJcJ1TVlQ51FuGxxda36vm8y3g9svg_G__8TY");'>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">55:04</div>
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
-                <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
-              </div>
-            </div>
-            <div>
-              <div class="text-xs text-slate-500 font-black uppercase tracking-widest mb-2 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-slate-300"></span> Community First
-              </div>
-              <h4 class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">Walking Together in Strength</h4>
-              <div class="flex items-center gap-3">
-                <div class="size-8 bg-slate-200 bg-cover grayscale" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwSiwrSBmZOqe5q3M3s2enhVlJMPgS_-Lc0SXWXB3puWQXC_rXOc5dP2gjPGUIpS_uu5Hn_YMUswv4zHUcjRBYtUs3iZebIUilSBfNmCKs4EiAZGWj1padlo6FNiThe2EW_AHgpzdbKX6_UDzHD-PgvBqBUXt3Dem9s4nq81Snuk-XD7mOpXtmr6iWMQEczdYKBlDMdz18W-CQfJO3jrsvmO64fRLEtkTFzlcBNARziLo_2RvekuQt_vS0ld-RXZXgJzsvaWqcHL4");'></div>
-                <div class="flex flex-col">
-                  <span class="text-sm font-bold text-slate-800">Sarah Jenkins</span>
-                  <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 15, 2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Card 3 -->
-          <div class="group cursor-pointer animate-on-scroll delay-200">
-            <div class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
-              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATZdpQZuQ914vvrHM5Y-NnHuSISN5-Bh51Rfbj9aU08hnj4O8SSrq-a80Dt-ysHUswUJLYwv26BLl5-DW5XS9LlIAAYeCh6H_03hPpcjuC22-oiJhUhEtB59VoLg-l-VC0dPXjzPg12kJ1NebuFGAxNSm_ilIjUYHhhi7I-tsnlEzODd8xGNTTGPmD2DpcLS_sGTNkfgb6dPCX1sSvQVPBsdsG3sy6nAE6vtN7kTZZR6tgK-4zhPcOsCwl5pnoOBr7IqN_fD2VCYA");'>
-              </div>
-              <div class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">38:50</div>
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
-                <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
-              </div>
-            </div>
-            <div>
-              <div class="text-xs text-[var(--color-accent)] font-black uppercase tracking-widest mb-2 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-[var(--color-accent)]"></span> New Beginnings
-              </div>
-              <h4 class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">A Dawn of New Mercy</h4>
-              <div class="flex items-center gap-3">
-                <div class="size-8 bg-slate-200 bg-cover grayscale" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7QbJXFcz6X_NeMIAHbRfLf6Py62O1_MQmgU7Oc2kPFyz-0bzGmWEY2JfA123NUiBJyuOjtG0cAW5S-Z7_gLSIZQSy-nnYVS-bpkSmscwAvgDBn1G-SVleiL53vciqlKnQKomlad8lvKtICP4YnIlvu0U4vRzxe_1bsOOCsbK_pOJ926NI7bABhATSQLbHw60R4VYQ_HRA4J_UATUZc3grdn4mKlIWGLauttHsnHu9qEHC0vDNyt8dCFMZwErh4j4x1ETALpO781o");'></div>
-                <div class="flex flex-col">
-                  <span class="text-sm font-bold text-slate-800">Dr. Samuel Rivers</span>
-                  <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 8, 2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        
-        <div class="mt-16 flex justify-center animate-on-scroll">
-          <button class="bg-white border-2 border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] px-8 py-4 font-black uppercase tracking-widest hover:bg-[var(--color-navy-deep)] hover:text-white transition-all duration-300 shadow-[4px_4px_0_var(--color-navy-deep)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px]">
-            Load More Videos
-          </button>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- Unified Footer -->
-    <footer class="bg-[#040b15] pt-24 pb-12 text-white/70 overflow-hidden border-t-8 border-[var(--color-primary)]">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20 relative">
-        <span class="absolute right-0 top-0 text-[15rem] font-black uppercase text-white/[0.02] tracking-tighter leading-none select-none -z-10">GFGBC</span>
-        <div class="lg:col-span-5">
-          <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" class="h-16 w-16 brightness-0 invert opacity-90 mb-6" alt="GFGBC Logo" />
-          <h4 class="text-2xl font-black text-white mb-4">Greater Faith<br/>Grace Bible Church</h4>
-          <p class="text-slate-400 font-medium leading-relaxed max-w-sm">
-            Building a community of believers dedicated to the pursuit of truth, grace, and meaningful fellowship.
-          </p>
-        </div>
-        
-        <div class="lg:col-span-3">
-          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-accent)] mb-6">Navigation</h5>
-          <ul class="space-y-4 font-semibold text-sm">
-            <li><a href="/index.html" class="hover:text-white hover:pl-2 transition-all block">Home</a></li>
-            <li><a href="/expect.html" class="hover:text-white hover:pl-2 transition-all block">What to Expect</a></li>
-            <li><a href="/staff.html" class="hover:text-white hover:pl-2 transition-all block">Leadership Staff</a></li>
-            <li><a href="/sermons.html" class="hover:text-white hover:pl-2 transition-all block">Sermon Library</a></li>
-          </ul>
-        </div>
-        
-        <div class="lg:col-span-4">
-          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-primary)] mb-6">Contact & Location</h5>
-          <ul class="space-y-4 font-semibold text-sm">
-            <li class="flex items-start gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">location_on</span>
-              <span class="pt-2">249 E. Randall Ave<br/>Rialto, CA 92376</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">mail</span>
-              <span>info@greaterfaithgrace.com</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">phone</span>
-              <span>(555) 123-4567</span>
-            </li>
-          </ul>
+        <div class="flex gap-2 w-full md:w-auto overflow-x-auto hide-scrollbar">
+          <button
+            class="bg-[var(--color-primary)] text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">All
+            Services</button>
+          <button
+            class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">Series</button>
+          <button
+            class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase">Speakers</button>
+          <button
+            class="bg-slate-100 text-slate-600 hover:bg-[var(--color-navy-deep)] hover:text-white px-5 py-2.5 rounded-sm text-sm font-bold tracking-wide transition-colors whitespace-nowrap uppercase flex items-center gap-1">Date
+            <span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium text-white/40">
-        <p>&copy; 2026 Greater Faith Grace Bible Church. All rights reserved.</p>
-        <div class="flex gap-4 mt-4 md:mt-0">
-          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+    </section>
+
+    <!-- Video Grid -->
+    <section class="py-20 px-6 max-w-7xl mx-auto min-h-[50vh]">
+      <div class="flex justify-between items-end mb-12 animate-on-scroll">
+        <h3
+          class="text-3xl font-black uppercase tracking-tight text-slate-900 border-l-[6px] border-[var(--color-primary)] pl-4">
+          Past Services</h3>
+        <div class="hidden sm:flex items-center gap-2 text-slate-500 text-sm font-semibold">
+          <span>Showing 12 of 248 videos</span>
+          <span class="material-symbols-outlined text-[var(--color-primary)]">tune</span>
         </div>
       </div>
-    </footer>
-    
-    <script type="module" src="/src/main.js"></script>
-    <style>
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
-  </body>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16">
+
+        <!-- Video Card 1 -->
+        <div class="group cursor-pointer animate-on-scroll">
+          <div
+            class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7TbR89S257n9FvKfT9f2rCzZ6Pe-AyCktkc6xwFFzK_LAXMKgYEDmFt5uPbWi3fur-dbxhrSVdSYFyOed6dvbNr3ZeveD8SUIHv4geBXnSds2sZ7QVP-KNXjB4gqaSwJqGhSRsEPQhx9qBHNTI8iJSiXh-FbHcEK387y0Bt4Djotg2kQhJpkzjQTmv_N8wO9X-qa6kIsLxVoDgMbyhP1iYIJwiP6p2hKiz2QAR2p4qfICoTud5yiXv7OVVmw7dEtM7xQLxwnf384");'>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">
+              42:15</div>
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="text-xs text-[var(--color-primary)] font-black uppercase tracking-widest mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span> Grace Series
+            </div>
+            <h4
+              class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">
+              The Unfailing Promise of Peace</h4>
+            <div class="flex items-center gap-3">
+              <div class="size-8 bg-slate-200 bg-cover grayscale"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPDk28L-wzUeLSp_q2cndNLRaB3t83ovJwrMvs8GC-I7tasK1ZV3F4kkrLIyEJ_e6aQKYqo39POFu5ygvt6qVxHTLRJT8MM-JUCxD9EUhCeDpCDCXp5IxY2wbbLrBtoCJR1h0i8lyNMeJsOSiZCRyjW_OCsFFvDMuSyEOgDJ4UUXHPrZZ6wmyDby-U3-f1asgzB7YD45a3xydatmBDzcTVyakkEBypR-667dt1QOPr02fYX3Z0zcDljhK7R22rMYeFtLsUJzANmCI");'>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-slate-800">Pastor Michael Chen</span>
+                <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 22, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="group cursor-pointer animate-on-scroll delay-100">
+          <div
+            class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy6hOu5-WtEKROGinGYTl9F-JFw18B-Avv0YLAect4R0AJNqdjjpMPcS5RChAkgEA2STrU1RlSX6N3Ouu9vAkln3EQqaY3cNf3FeCasuQywOnvIc1V5JR6K5ITTMSnO3ANvDtccAvnfSoI_VfF3BhiK0ilHYj252smfuHlz7xyA5ZZdVQzMO-3XC6oJzDtchfYgrf2m_HFdrhdO99p9tQjun-5hAmf4qh0i3LdU6iJcJ1TVlQ51FuGxxda36vm8y3g9svg_G__8TY");'>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">
+              55:04</div>
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
+            </div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-500 font-black uppercase tracking-widest mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-slate-300"></span> Community First
+            </div>
+            <h4
+              class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">
+              Walking Together in Strength</h4>
+            <div class="flex items-center gap-3">
+              <div class="size-8 bg-slate-200 bg-cover grayscale"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwSiwrSBmZOqe5q3M3s2enhVlJMPgS_-Lc0SXWXB3puWQXC_rXOc5dP2gjPGUIpS_uu5Hn_YMUswv4zHUcjRBYtUs3iZebIUilSBfNmCKs4EiAZGWj1padlo6FNiThe2EW_AHgpzdbKX6_UDzHD-PgvBqBUXt3Dem9s4nq81Snuk-XD7mOpXtmr6iWMQEczdYKBlDMdz18W-CQfJO3jrsvmO64fRLEtkTFzlcBNARziLo_2RvekuQt_vS0ld-RXZXgJzsvaWqcHL4");'>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-slate-800">Sarah Jenkins</span>
+                <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 15, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="group cursor-pointer animate-on-scroll delay-200">
+          <div
+            class="relative aspect-video overflow-hidden bg-black mb-4 group-hover:shadow-2xl transition-all duration-300">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 saturate-50 group-hover:saturate-100 opacity-80"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATZdpQZuQ914vvrHM5Y-NnHuSISN5-Bh51Rfbj9aU08hnj4O8SSrq-a80Dt-ysHUswUJLYwv26BLl5-DW5XS9LlIAAYeCh6H_03hPpcjuC22-oiJhUhEtB59VoLg-l-VC0dPXjzPg12kJ1NebuFGAxNSm_ilIjUYHhhi7I-tsnlEzODd8xGNTTGPmD2DpcLS_sGTNkfgb6dPCX1sSvQVPBsdsG3sy6nAE6vtN7kTZZR6tgK-4zhPcOsCwl5pnoOBr7IqN_fD2VCYA");'>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 bg-black/90 text-[var(--color-accent)] text-[10px] font-black uppercase tracking-widest px-2 py-1 shadow-lg border border-white/10">
+              38:50</div>
+            <div
+              class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 backdrop-blur-sm">
+              <span class="material-symbols-outlined text-white !text-6xl drop-shadow-lg">play_circle</span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="text-xs text-[var(--color-accent)] font-black uppercase tracking-widest mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[var(--color-accent)]"></span> New Beginnings
+            </div>
+            <h4
+              class="text-xl font-black leading-tight text-slate-900 group-hover:text-[var(--color-primary)] transition-colors mb-3">
+              A Dawn of New Mercy</h4>
+            <div class="flex items-center gap-3">
+              <div class="size-8 bg-slate-200 bg-cover grayscale"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7QbJXFcz6X_NeMIAHbRfLf6Py62O1_MQmgU7Oc2kPFyz-0bzGmWEY2JfA123NUiBJyuOjtG0cAW5S-Z7_gLSIZQSy-nnYVS-bpkSmscwAvgDBn1G-SVleiL53vciqlKnQKomlad8lvKtICP4YnIlvu0U4vRzxe_1bsOOCsbK_pOJ926NI7bABhATSQLbHw60R4VYQ_HRA4J_UATUZc3grdn4mKlIWGLauttHsnHu9qEHC0vDNyt8dCFMZwErh4j4x1ETALpO781o");'>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-bold text-slate-800">Dr. Samuel Rivers</span>
+                <span class="text-xs text-slate-500 font-semibold uppercase tracking-wide">October 8, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-16 flex justify-center animate-on-scroll">
+        <button
+          class="bg-white border-2 border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] px-8 py-4 font-black uppercase tracking-widest hover:bg-[var(--color-navy-deep)] hover:text-white transition-all duration-300 shadow-[4px_4px_0_var(--color-navy-deep)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px]">
+          Load More Videos
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Unified Footer -->
+  <footer class="bg-[#040b15] pt-24 pb-12 text-white/70 overflow-hidden border-t-8 border-[var(--color-primary)]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20 relative">
+      <span
+        class="absolute right-0 top-0 text-[15rem] font-black uppercase text-white/[0.02] tracking-tighter leading-none select-none -z-10">GFGBC</span>
+      <div class="lg:col-span-5">
+        <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png"
+          class="h-16 w-16 brightness-0 invert opacity-90 mb-6" alt="GFGBC Logo" />
+        <h4 class="text-2xl font-black text-white mb-4">Greater Faith<br />Grace Bible Church</h4>
+        <p class="text-slate-400 font-medium leading-relaxed max-w-sm">
+          A loving Church that cares for you. Reaching out in love.
+        </p>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-accent)] mb-6">Navigation</h5>
+        <ul class="space-y-4 font-semibold text-sm">
+          <li><a href="/index.html" class="hover:text-white hover:pl-2 transition-all block">Home</a></li>
+          <li><a href="/expect.html" class="hover:text-white hover:pl-2 transition-all block">What to Expect</a></li>
+          <li><a href="/staff.html" class="hover:text-white hover:pl-2 transition-all block">Leadership Staff</a></li>
+          <li><a href="/sermons.html" class="hover:text-white hover:pl-2 transition-all block">Sermon Library</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-4">
+        <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-primary)] mb-6">Contact & Location
+        </h5>
+        <ul class="space-y-4 font-semibold text-sm">
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">location_on</span>
+            <span class="pt-2">249 E. Randall Ave<br />Rialto, CA 92376</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">mail</span>
+            <span>info@gfgbcrialto.org</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">phone</span>
+            <span>(909) 875-4891</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium text-white/40">
+      <p>&copy; 2026 Greater Faith Grace Bible Church. All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</body>
+
 </html>

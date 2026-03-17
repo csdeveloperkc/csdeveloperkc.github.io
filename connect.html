@@ -1,271 +1,356 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greater Faith Grace Bible Church - Connect</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  </head>
-  <body class="bg-slate-50 text-slate-900 antialiased font-[Inter] overflow-x-hidden">
-    
-    <!-- Unified Header -->
-    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="/index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
-          <!-- Will use the logo from the download -->
-          <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" alt="GFGBC Logo" class="h-12 w-12 object-contain shrink-0" />
-          <span class="text-slate-900 text-lg lg:text-xl font-black tracking-tight whitespace-nowrap hidden sm:block uppercase">GFGBC</span>
-        </a>
-        
-        <nav class="hidden xl:flex items-center gap-8">
-          <a href="/index.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Home</a>
-          <a href="/staff.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Staff</a>
-          <a href="/expect.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">What to Expect</a>
-          <a href="/sermons.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Videos</a>
-          <div class="relative group">
-            <button class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-1">Ministries <span class="material-symbols-outlined text-sm">expand_more</span></button>
-            <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 flex flex-col">
-              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Groups</span>
-              <a href="/mens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Men's Ministry</a>
-              <a href="/womens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Women's Ministry (G.L.O.W.)</a>
-              <a href="/prayer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Prayer Warriors</a>
-              <div class="h-px bg-slate-100 my-1 mx-4"></div>
-              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Outreach & Support</span>
-              <a href="/compassion.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Compassion Outreach</a>
-              <a href="/grief-share.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Grief Share</a>
-            </div>
-          </div>
-          <a href="/connect.html" class="text-sm font-bold text-[var(--color-primary)]">Connect</a>
-        </nav>
-        
-        <div class="flex items-center gap-4">
-          <a href="#" class="bg-[var(--color-primary)] text-white px-6 py-2.5 rounded text-sm font-bold tracking-wide hover:shadow-lg hover:shadow-[var(--color-primary)]/30 transition-all transform hover:-translate-y-0.5 uppercase">Give</a>
-          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-900 border border-slate-900 rounded-sm">
-            <span class="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200">
-        <nav class="flex flex-col p-4 shadow-xl">
-          <a href="/index.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Home</a>
-          <a href="/staff.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Staff</a>
-          <a href="/expect.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">What to Expect</a>
-          <a href="/sermons.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Videos</a>
-          <div class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Ministries</div>
-          <a href="/mens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Men's Ministry</a>
-          <a href="/womens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">G.L.O.W. Women</a>
-          <a href="/prayer.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Prayer Warriors</a>
-          <a href="/compassion.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Compassion Outreach</a>
-          <a href="/grief-share.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Grief Share</a>
-          <a href="/connect.html" class="p-3 text-[var(--color-primary)] font-bold">Connect</a>
-        </nav>
-      </div>
-    </header>
 
-    <main class="w-full pt-20">
-      
-      <!-- Connect Hero (High Contrast, Bold Typography) -->
-      <section class="relative w-full h-[600px] flex items-center bg-[var(--color-navy-deep)] overflow-hidden animate-on-scroll border-b-8 border-[var(--color-primary)]">
-        <div class="absolute inset-0 z-0">
-          <div class="absolute inset-0 bg-gradient-to-r from-[var(--color-navy-deep)] via-[var(--color-navy-deep)]/90 to-transparent z-10"></div>
-          <div class="absolute inset-0 bg-[var(--color-primary)] mix-blend-color z-20 opacity-20"></div>
-          <img class="w-full h-full object-cover filter grayscale" data-alt="Church Community" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuE-fZYbyInwjCKY7eBy-NKPQEQVLp13mu5QFWcKYm4ZL20j2CDofztwOMHzKNHjVUY5-hWa0DsK8nyINkrxlLLbdA7wUvaHWu7HQb3GfRR4PO1NzHi2sZRvO1uzFVZNhUrGOdJGdemF3lAsUvXMRlFcBhn8hfcMwcmdHwAKkUSWaQ93dgAbF_qEMnyr9quDtgqJ9TGPKEkVygxwmynCFChNA0lh1DYtNP29Mk-TSKzkZu-mOoDmjeREbOZQgzOGJXwAxDAeAO0lk" alt="Connect with Us" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greater Faith Grace Bible Church - Connect</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased font-[Inter] overflow-x-hidden">
+
+  <!-- Unified Header -->
+  <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+        <!-- Will use the logo from the download -->
+        <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" alt="GFGBC Logo"
+          class="h-12 w-12 object-contain shrink-0" />
+        <span
+          class="text-slate-900 text-lg lg:text-xl font-black tracking-tight whitespace-nowrap hidden sm:block uppercase">GFGBC</span>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-8">
+        <a href="/index.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Home</a>
+        <a href="/staff.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Staff</a>
+        <a href="/expect.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">What to
+          Expect</a>
+        <a href="/sermons.html"
+          class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Videos</a>
+        <div class="relative group">
+          <button
+            class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-1">Ministries
+            <span class="material-symbols-outlined text-sm">expand_more</span></button>
+          <div
+            class="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 flex flex-col">
+            <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Groups</span>
+            <a href="/mens-ministry.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Men's
+              Ministry</a>
+            <a href="/womens-ministry.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Women's
+              Ministry (G.L.O.W.)</a>
+            <a href="/prayer.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Prayer
+              Warriors</a>
+            <div class="h-px bg-slate-100 my-1 mx-4"></div>
+            <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Outreach &
+              Support</span>
+            <a href="/compassion.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Compassion
+              Outreach</a>
+            <a href="/grief-share.html"
+              class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Grief
+              Share</a>
+          </div>
         </div>
-        
-        <div class="relative z-30 max-w-7xl mx-auto px-6 w-full">
-          <div class="max-w-2xl">
-            <span class="text-[var(--color-accent)] font-black tracking-[0.2em] text-sm uppercase mb-6 inline-block border-l-4 border-[var(--color-accent)] pl-4">Join Our Community</span>
-            <h1 class="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9] uppercase">Connect<br/><span class="text-[var(--color-primary)]">With Us</span></h1>
-            <p class="text-xl md:text-2xl text-slate-300 font-light mb-10 leading-relaxed max-w-lg border-l-2 border-slate-700 pl-6">
-              Faith is a journey best traveled together. Find your place in our church family and grow in your walk with Christ.
+        <a href="/connect.html" class="text-sm font-bold text-[var(--color-primary)]">Connect</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#"
+          class="bg-[var(--color-primary)] text-white px-6 py-2.5 rounded text-sm font-bold tracking-wide hover:shadow-lg hover:shadow-[var(--color-primary)]/30 transition-all transform hover:-translate-y-0.5 uppercase">Give</a>
+        <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-900 border border-slate-900 rounded-sm">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200">
+      <nav class="flex flex-col p-4 shadow-xl">
+        <a href="/index.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Home</a>
+        <a href="/staff.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Staff</a>
+        <a href="/expect.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">What to Expect</a>
+        <a href="/sermons.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Videos</a>
+        <div class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Ministries</div>
+        <a href="/mens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Men's
+          Ministry</a>
+        <a href="/womens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">G.L.O.W.
+          Women</a>
+        <a href="/prayer.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Prayer Warriors</a>
+        <a href="/compassion.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Compassion
+          Outreach</a>
+        <a href="/grief-share.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Grief Share</a>
+        <a href="/connect.html" class="p-3 text-[var(--color-primary)] font-bold">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-20">
+
+    <!-- Connect Hero (High Contrast, Bold Typography) -->
+    <section
+      class="relative w-full h-[600px] flex items-center bg-[var(--color-navy-deep)] overflow-hidden animate-on-scroll border-b-8 border-[var(--color-primary)]">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-[var(--color-navy-deep)] via-[var(--color-navy-deep)]/90 to-transparent z-10">
+        </div>
+        <div class="absolute inset-0 bg-[var(--color-primary)] mix-blend-color z-20 opacity-20"></div>
+        <img class="w-full h-full object-cover filter grayscale" data-alt="Church Community"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuE-fZYbyInwjCKY7eBy-NKPQEQVLp13mu5QFWcKYm4ZL20j2CDofztwOMHzKNHjVUY5-hWa0DsK8nyINkrxlLLbdA7wUvaHWu7HQb3GfRR4PO1NzHi2sZRvO1uzFVZNhUrGOdJGdemF3lAsUvXMRlFcBhn8hfcMwcmdHwAKkUSWaQ93dgAbF_qEMnyr9quDtgqJ9TGPKEkVygxwmynCFChNA0lh1DYtNP29Mk-TSKzkZu-mOoDmjeREbOZQgzOGJXwAxDAeAO0lk"
+          alt="Connect with Us" />
+      </div>
+
+      <div class="relative z-30 max-w-7xl mx-auto px-6 w-full">
+        <div class="max-w-2xl">
+          <span
+            class="text-[var(--color-accent)] font-black tracking-[0.2em] text-sm uppercase mb-6 inline-block border-l-4 border-[var(--color-accent)] pl-4">Join
+            Our Community</span>
+          <h1 class="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9] uppercase">
+            Connect<br /><span class="text-[var(--color-primary)]">With Us</span></h1>
+          <p
+            class="text-xl md:text-2xl text-slate-300 font-light mb-10 leading-relaxed max-w-lg border-l-2 border-slate-700 pl-6">
+            Faith is a journey best traveled together. Find your place in our church family and grow in your walk with
+            Christ.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6">
+            <a href="#get-involved"
+              class="bg-[var(--color-primary)] text-white px-8 py-5 text-sm font-black uppercase tracking-widest hover:bg-white hover:text-[var(--color-primary)] transition-colors shadow-2xl inline-flex justify-center items-center">
+              Get Involved
+            </a>
+            <a href="#"
+              class="bg-transparent border-2 border-white/30 text-white hover:border-white px-8 py-5 text-sm font-black uppercase tracking-widest transition-colors inline-flex justify-center items-center">
+              View Calendar
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ways to Get Involved (Grid Layout with Structural Cards) -->
+    <section id="get-involved" class="max-w-[1200px] mx-auto px-6 py-32 relative">
+      <div class="absolute right-0 top-32 w-1/3 h-64 bg-slate-100 -z-10 rotate-3 transform origin-right"></div>
+
+      <div class="mb-20">
+        <h2 class="text-4xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter mb-6">Ways to <br />Get
+          Involved</h2>
+        <div class="h-2 w-32 bg-[var(--color-primary)]"></div>
+        <p class="mt-8 text-slate-600 text-xl max-w-2xl font-medium leading-relaxed">
+          Whether you are looking to serve, study, or simply belong, there is a space for you here at Greater Faith
+          Grace Bible Church.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+        <!-- Volunteer Opportunities -->
+        <div
+          class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500">
+          <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+            <img
+              class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZrHZ4ojZVkqJijiJnkhRze6_pnRuOycsqVXQbdy3m5Zz8OJEtgFvorDzZD1mVCco0n4On6054W38IL8wrv2ZmHUxqjd8P9kzPz2-AW9jx9SAhlZVKxZxxj5l_c0wY8hiLCuGuGoTbdW3pJ-AaYbdhu1uFLXFWPu07hcYiDpvwH3PHokBt9qGA7FgcbYhb7ZByOnLjM8DChFycUxiRyjK4L7qg6CJ4BVJTLJ3QiqTLIS3NjrdPEgjSLh49-ejnOfIr5N1H6D0LpM0"
+              alt="Volunteer" />
+          </div>
+          <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
+            <div class="text-xs font-black text-[var(--color-primary)] uppercase tracking-widest mb-3">Service</div>
+            <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Volunteer</h3>
+            <p class="text-slate-600 leading-relaxed font-medium mb-8">
+              Discover the joy of serving. From hospitality to technical production, use your unique God-given talents
+              to support our church body.
             </p>
-            <div class="flex flex-col sm:flex-row gap-6">
-              <a href="#get-involved" class="bg-[var(--color-primary)] text-white px-8 py-5 text-sm font-black uppercase tracking-widest hover:bg-white hover:text-[var(--color-primary)] transition-colors shadow-2xl inline-flex justify-center items-center">
-                Get Involved
-              </a>
-              <a href="#" class="bg-transparent border-2 border-white/30 text-white hover:border-white px-8 py-5 text-sm font-black uppercase tracking-widest transition-colors inline-flex justify-center items-center">
-                View Calendar
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ways to Get Involved (Grid Layout with Structural Cards) -->
-      <section id="get-involved" class="max-w-[1200px] mx-auto px-6 py-32 relative">
-        <div class="absolute right-0 top-32 w-1/3 h-64 bg-slate-100 -z-10 rotate-3 transform origin-right"></div>
-        
-        <div class="mb-20">
-          <h2 class="text-4xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter mb-6">Ways to <br/>Get Involved</h2>
-          <div class="h-2 w-32 bg-[var(--color-primary)]"></div>
-          <p class="mt-8 text-slate-600 text-xl max-w-2xl font-medium leading-relaxed">
-            Whether you are looking to serve, study, or simply belong, there is a space for you here at Greater Faith Grace Bible Church.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          
-          <!-- Volunteer Opportunities -->
-          <div class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500">
-            <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
-              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-              <img class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZrHZ4ojZVkqJijiJnkhRze6_pnRuOycsqVXQbdy3m5Zz8OJEtgFvorDzZD1mVCco0n4On6054W38IL8wrv2ZmHUxqjd8P9kzPz2-AW9jx9SAhlZVKxZxxj5l_c0wY8hiLCuGuGoTbdW3pJ-AaYbdhu1uFLXFWPu07hcYiDpvwH3PHokBt9qGA7FgcbYhb7ZByOnLjM8DChFycUxiRyjK4L7qg6CJ4BVJTLJ3QiqTLIS3NjrdPEgjSLh49-ejnOfIr5N1H6D0LpM0" alt="Volunteer" />
-            </div>
-            <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
-              <div class="text-xs font-black text-[var(--color-primary)] uppercase tracking-widest mb-3">Service</div>
-              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Volunteer</h3>
-              <p class="text-slate-600 leading-relaxed font-medium mb-8">
-                Discover the joy of serving. From hospitality to technical production, use your unique God-given talents to support our church body.
-              </p>
-              <a href="#" class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
-                <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Learn More</span>
-                <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Small Groups -->
-          <div class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500 delay-100">
-            <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
-              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-              <img class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1-HB7lpnD8t3sOeAXpsCR1QtuuiAsahvtCKFetUIqpQZhoyUtvqiQXnWVeKwTyjUDqzjn5H87awcctfOic6cAExM6BMca7o3ANFihNzf1qkwsuzuG2vDNrSljLqpDRG_jxPt9WTVGlWF0mxztNQ-AIKEx9AvShB0cbzJtEu7Q92pYa2LOa1oTEAtXqooD2B5Dr6yets_HFutE_7lV43ZLCE83kg8NNP46Y5NxASHOLci3b422lh_1033P93OrkcIiRpsJ9kxyJVI" alt="Small Groups" />
-            </div>
-            <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
-              <div class="text-xs font-black text-[var(--color-accent)] uppercase tracking-widest mb-3">Community</div>
-              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Small Groups</h3>
-              <p class="text-slate-600 leading-relaxed font-medium mb-8">
-                Life is not meant to be lived alone. Join a small group to build lasting friendships, pray together, and dive deeper into God's word.
-              </p>
-              <a href="#" class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
-                <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Join a Group</span>
-                <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Community Outreach -->
-          <div class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500">
-            <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
-              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
-              <img class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwM2zEpP3aGasiDRyUZEGsd4T40_7mNVOEDBRWRFT4luD9aqVRxOa92dg33l13lhIMjy9_cXRjltZkfDJe81ZWYp-_96C95LKsJ-GVKZ9D1hkPJWq2iG_4aRkrVPuuNYyUhAkl68erLXl555QnKtvot_1X1Guc4k6GvvvG2KCh0aJzTp9Xi9oLY7FN5QyPfEbNupdtr0CFsFR9UO-xsH97iNtJaVOsxBPbHyBx06geGC_sCoN3fYpLw_7KnUb5nmuwAuRpj8bWSHM" alt="Outreach" />
-            </div>
-            <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
-              <div class="text-xs font-black text-[var(--color-primary)] uppercase tracking-widest mb-3">Outreach</div>
-              <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Community Action</h3>
-              <p class="text-slate-600 leading-relaxed font-medium mb-8">
-                We are committed to loving our neighbors in Rialto. Participate in our local missions to provide food, support, and hope.
-              </p>
-              <a href="#" class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
-                <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Sign Up</span>
-                <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Membership -->
-          <div class="group relative flex flex-col md:flex-row bg-[var(--color-navy-deep)] text-white animate-on-scroll hover:shadow-3xl transition-all duration-500 delay-100">
-            <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative border-r-4 border-[var(--color-primary)]">
-              <div class="absolute inset-0 bg-[var(--color-primary)] mix-blend-multiply opacity-50 z-10 group-hover:opacity-20 transition-opacity"></div>
-              <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsyv7OCjUCeDJZHYpXdzm7TkUmx4BWS6adojWl1bLIrA3wiH1o2qmIXd4hUs_ZhSwS4jkzhohLSs8bFbb6jEkcWnX8BiEpieCDXu5mEPcLjNwZFGItOjp0H09uxop9tt1ZT-u3wdZ3WRiidZuZmXuewek_f78F_rVNM-A9hQVemOzl8yVfcmFvswvQGr6z6q3Q0FJYXtzoML1IN9c5M8LfvM_ZzXNg8sTLmQ9edrdmV37_9BojBexC93qlb9ccimdeUAB4e3jKXwI" alt="Membership" />
-            </div>
-            <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
-              <div class="text-xs font-black text-[var(--color-accent)] uppercase tracking-widest mb-3">Belonging</div>
-              <h3 class="text-2xl font-black text-white mb-4 tracking-tight uppercase">Membership</h3>
-              <p class="text-slate-300 leading-relaxed font-light mb-8">
-                Take the next step in your commitment. Learn what it means to be a formal member of Greater Faith Grace Bible Church.
-              </p>
-              <a href="#" class="inline-flex items-center text-sm font-black text-white group-hover:text-[var(--color-accent)] transition-colors uppercase tracking-widest mt-auto">
-                <span class="border-b-2 border-white group-hover:border-[var(--color-accent)] pb-1 transition-colors">Apply Now</span>
-                <span class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Contact CTA -->
-      <section class="bg-white py-32 border-t border-b border-slate-200 animate-on-scroll relative overflow-hidden">
-        <div class="absolute inset-0 pattern-grid-lg text-slate-100 opacity-50"></div>
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <span class="material-symbols-outlined text-[5rem] text-[var(--color-primary)] mb-6 drop-shadow-lg">forum</span>
-          <h2 class="text-5xl md:text-7xl font-black text-slate-900 mb-8 uppercase tracking-tighter leading-none">Reach Out</h2>
-          <p class="text-xl md:text-2xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            Our pastoral team and ministry leaders would love to help you find the right group or area of service.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="tel:5551234567" class="bg-[var(--color-navy-deep)] text-white px-10 py-5 text-sm font-black uppercase tracking-widest hover:bg-[var(--color-primary)] transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
-              <span class="material-symbols-outlined text-xl">call</span> (555) 123-4567
-            </a>
-            <a href="mailto:info@greaterfaithgrace.com" class="border-[3px] border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] px-10 py-5 text-sm font-black uppercase tracking-widest hover:bg-[var(--color-navy-deep)] hover:text-white transition-all duration-300 flex items-center justify-center gap-3">
-              <span class="material-symbols-outlined text-xl">mail</span> Send Email
+            <a href="#"
+              class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
+              <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Learn More</span>
+              <span
+                class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
             </a>
           </div>
         </div>
-      </section>
 
-    </main>
+        <!-- Small Groups -->
+        <div
+          class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500 delay-100">
+          <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+            <img
+              class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1-HB7lpnD8t3sOeAXpsCR1QtuuiAsahvtCKFetUIqpQZhoyUtvqiQXnWVeKwTyjUDqzjn5H87awcctfOic6cAExM6BMca7o3ANFihNzf1qkwsuzuG2vDNrSljLqpDRG_jxPt9WTVGlWF0mxztNQ-AIKEx9AvShB0cbzJtEu7Q92pYa2LOa1oTEAtXqooD2B5Dr6yets_HFutE_7lV43ZLCE83kg8NNP46Y5NxASHOLci3b422lh_1033P93OrkcIiRpsJ9kxyJVI"
+              alt="Small Groups" />
+          </div>
+          <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
+            <div class="text-xs font-black text-[var(--color-accent)] uppercase tracking-widest mb-3">Community</div>
+            <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Small Groups</h3>
+            <p class="text-slate-600 leading-relaxed font-medium mb-8">
+              Life is not meant to be lived alone. Join a small group to build lasting friendships, pray together, and
+              dive deeper into God's word.
+            </p>
+            <a href="#"
+              class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
+              <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Join a
+                Group</span>
+              <span
+                class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </div>
 
-    <!-- Unified Footer -->
-    <footer class="bg-[#040b15] pt-24 pb-12 text-white/70 overflow-hidden border-t-8 border-[var(--color-primary)]">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20 relative">
-        <span class="absolute right-0 top-0 text-[15rem] font-black uppercase text-white/[0.02] tracking-tighter leading-none select-none -z-10">GFGBC</span>
-        <div class="lg:col-span-5">
-          <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png" class="h-16 w-16 brightness-0 invert opacity-90 mb-6" alt="GFGBC Logo" />
-          <h4 class="text-2xl font-black text-white mb-4">Greater Faith<br/>Grace Bible Church</h4>
-          <p class="text-slate-400 font-medium leading-relaxed max-w-sm">
-            Building a community of believers dedicated to the pursuit of truth, grace, and meaningful fellowship.
-          </p>
+        <!-- Community Outreach -->
+        <div
+          class="group relative flex flex-col md:flex-row bg-white border border-slate-200 animate-on-scroll hover:shadow-2xl transition-all duration-500">
+          <div class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
+            <img
+              class="w-full h-full object-cover filter saturate-50 group-hover:saturate-100 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwM2zEpP3aGasiDRyUZEGsd4T40_7mNVOEDBRWRFT4luD9aqVRxOa92dg33l13lhIMjy9_cXRjltZkfDJe81ZWYp-_96C95LKsJ-GVKZ9D1hkPJWq2iG_4aRkrVPuuNYyUhAkl68erLXl555QnKtvot_1X1Guc4k6GvvvG2KCh0aJzTp9Xi9oLY7FN5QyPfEbNupdtr0CFsFR9UO-xsH97iNtJaVOsxBPbHyBx06geGC_sCoN3fYpLw_7KnUb5nmuwAuRpj8bWSHM"
+              alt="Outreach" />
+          </div>
+          <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
+            <div class="text-xs font-black text-[var(--color-primary)] uppercase tracking-widest mb-3">Outreach</div>
+            <h3 class="text-2xl font-black text-slate-900 mb-4 tracking-tight uppercase">Community Action</h3>
+            <p class="text-slate-600 leading-relaxed font-medium mb-8">
+              We are committed to loving our neighbors in Rialto. Participate in our local missions to provide food,
+              support, and hope.
+            </p>
+            <a href="#"
+              class="inline-flex items-center text-sm font-black text-slate-900 group-hover:text-[var(--color-primary)] transition-colors uppercase tracking-widest mt-auto">
+              <span class="border-b-2 border-slate-900 group-hover:border-[var(--color-primary)] pb-1">Sign Up</span>
+              <span
+                class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+            </a>
+          </div>
         </div>
-        
-        <div class="lg:col-span-3">
-          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-accent)] mb-6">Navigation</h5>
-          <ul class="space-y-4 font-semibold text-sm">
-            <li><a href="/index.html" class="hover:text-white hover:pl-2 transition-all block">Home</a></li>
-            <li><a href="/expect.html" class="hover:text-white hover:pl-2 transition-all block">What to Expect</a></li>
-            <li><a href="/staff.html" class="hover:text-white hover:pl-2 transition-all block">Leadership Staff</a></li>
-            <li><a href="/sermons.html" class="hover:text-white hover:pl-2 transition-all block">Sermon Library</a></li>
-          </ul>
+
+        <!-- Membership -->
+        <div
+          class="group relative flex flex-col md:flex-row bg-[var(--color-navy-deep)] text-white animate-on-scroll hover:shadow-3xl transition-all duration-500 delay-100">
+          <div
+            class="w-full md:w-2/5 aspect-square md:aspect-auto overflow-hidden relative border-r-4 border-[var(--color-primary)]">
+            <div
+              class="absolute inset-0 bg-[var(--color-primary)] mix-blend-multiply opacity-50 z-10 group-hover:opacity-20 transition-opacity">
+            </div>
+            <img
+              class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsyv7OCjUCeDJZHYpXdzm7TkUmx4BWS6adojWl1bLIrA3wiH1o2qmIXd4hUs_ZhSwS4jkzhohLSs8bFbb6jEkcWnX8BiEpieCDXu5mEPcLjNwZFGItOjp0H09uxop9tt1ZT-u3wdZ3WRiidZuZmXuewek_f78F_rVNM-A9hQVemOzl8yVfcmFvswvQGr6z6q3Q0FJYXtzoML1IN9c5M8LfvM_ZzXNg8sTLmQ9edrdmV37_9BojBexC93qlb9ccimdeUAB4e3jKXwI"
+              alt="Membership" />
+          </div>
+          <div class="w-full md:w-3/5 p-8 flex flex-col justify-center">
+            <div class="text-xs font-black text-[var(--color-accent)] uppercase tracking-widest mb-3">Belonging</div>
+            <h3 class="text-2xl font-black text-white mb-4 tracking-tight uppercase">Membership</h3>
+            <p class="text-slate-300 leading-relaxed font-light mb-8">
+              Take the next step in your commitment. Learn what it means to be a formal member of Greater Faith Grace
+              Bible Church.
+            </p>
+            <a href="#"
+              class="inline-flex items-center text-sm font-black text-white group-hover:text-[var(--color-accent)] transition-colors uppercase tracking-widest mt-auto">
+              <span
+                class="border-b-2 border-white group-hover:border-[var(--color-accent)] pb-1 transition-colors">Apply
+                Now</span>
+              <span
+                class="material-symbols-outlined ml-2 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+            </a>
+          </div>
         </div>
-        
-        <div class="lg:col-span-4">
-          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-primary)] mb-6">Contact & Location</h5>
-          <ul class="space-y-4 font-semibold text-sm">
-            <li class="flex items-start gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">location_on</span>
-              <span class="pt-2">249 E. Randall Ave<br/>Rialto, CA 92376</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">mail</span>
-              <span>info@greaterfaithgrace.com</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <span class="material-symbols-outlined outline p-2 rounded text-white/40">phone</span>
-              <span>(555) 123-4567</span>
-            </li>
-          </ul>
+
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="bg-white py-32 border-t border-b border-slate-200 animate-on-scroll relative overflow-hidden">
+      <div class="absolute inset-0 pattern-grid-lg text-slate-100 opacity-50"></div>
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <span class="material-symbols-outlined text-[5rem] text-[var(--color-primary)] mb-6 drop-shadow-lg">forum</span>
+        <h2 class="text-5xl md:text-7xl font-black text-slate-900 mb-8 uppercase tracking-tighter leading-none">Reach
+          Out</h2>
+        <p class="text-xl md:text-2xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+          Our pastoral team and ministry leaders would love to help you find the right group or area of service.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="tel:5551234567"
+            class="bg-[var(--color-navy-deep)] text-white px-10 py-5 text-sm font-black uppercase tracking-widest hover:bg-[var(--color-primary)] transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
+            <span class="material-symbols-outlined text-xl">call</span> (555) 123-4567
+          </a>
+          <a href="mailto:info@greaterfaithgrace.com"
+            class="border-[3px] border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] px-10 py-5 text-sm font-black uppercase tracking-widest hover:bg-[var(--color-navy-deep)] hover:text-white transition-all duration-300 flex items-center justify-center gap-3">
+            <span class="material-symbols-outlined text-xl">mail</span> Send Email
+          </a>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium text-white/40">
-        <p>&copy; 2026 Greater Faith Grace Bible Church. All rights reserved.</p>
-        <div class="flex gap-4 mt-4 md:mt-0">
-          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-        </div>
+    </section>
+
+  </main>
+
+  <!-- Unified Footer -->
+  <footer class="bg-[#040b15] pt-24 pb-12 text-white/70 overflow-hidden border-t-8 border-[var(--color-primary)]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20 relative">
+      <span
+        class="absolute right-0 top-0 text-[15rem] font-black uppercase text-white/[0.02] tracking-tighter leading-none select-none -z-10">GFGBC</span>
+      <div class="lg:col-span-5">
+        <img src="/stitch_downloads/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png.png"
+          class="h-16 w-16 brightness-0 invert opacity-90 mb-6" alt="GFGBC Logo" />
+        <h4 class="text-2xl font-black text-white mb-4">Greater Faith<br />Grace Bible Church</h4>
+        <p class="text-slate-400 font-medium leading-relaxed max-w-sm">
+          A loving Church that cares for you. Reaching out in love.
+        </p>
       </div>
-    </footer>
-    
-    <script type="module" src="/src/main.js"></script>
-    <style>
-      .pattern-grid-lg {
-        background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px);
-        background-size: 60px 60px;
-      }
-    </style>
-  </body>
+
+      <div class="lg:col-span-3">
+        <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-accent)] mb-6">Navigation</h5>
+        <ul class="space-y-4 font-semibold text-sm">
+          <li><a href="/index.html" class="hover:text-white hover:pl-2 transition-all block">Home</a></li>
+          <li><a href="/expect.html" class="hover:text-white hover:pl-2 transition-all block">What to Expect</a></li>
+          <li><a href="/staff.html" class="hover:text-white hover:pl-2 transition-all block">Leadership Staff</a></li>
+          <li><a href="/sermons.html" class="hover:text-white hover:pl-2 transition-all block">Sermon Library</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-4">
+        <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-primary)] mb-6">Contact & Location
+        </h5>
+        <ul class="space-y-4 font-semibold text-sm">
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">location_on</span>
+            <span class="pt-2">249 E. Randall Ave<br />Rialto, CA 92376</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">mail</span>
+            <span>info@gfgbcrialto.org</span>
+          </li>
+          <li class="flex items-center gap-4">
+            <span class="material-symbols-outlined outline p-2 rounded text-white/40">phone</span>
+            <span>(909) 875-4891</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium text-white/40">
+      <p>&copy; 2026 Greater Faith Grace Bible Church. All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <style>
+    .pattern-grid-lg {
+      background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+  </style>
+</body>
+
 </html>
