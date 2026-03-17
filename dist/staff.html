@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greater Faith Grace Bible Church - Staff</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script type="module" crossorigin src="/assets/main-BK6g7zmR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-DC8jdV7J.css">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-[Inter] overflow-x-hidden">
+    
+    <!-- Unified Header -->
+    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="/index.html" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+          <!-- Will use the logo from the download -->
+          <img src="/assets/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png-DwOEoPWY.png" alt="GFGBC Logo" class="h-12 w-12 object-contain shrink-0" />
+          <span class="text-slate-900 text-lg lg:text-xl font-black tracking-tight whitespace-nowrap hidden sm:block uppercase">GFGBC</span>
+        </a>
+        
+        <nav class="hidden xl:flex items-center gap-8">
+          <a href="/index.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Home</a>
+          <a href="/staff.html" class="text-sm font-bold text-[var(--color-primary)]">Staff</a>
+          <a href="/expect.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">What to Expect</a>
+          <a href="/sermons.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Videos</a>
+          <div class="relative group">
+            <button class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors flex items-center gap-1">Ministries <span class="material-symbols-outlined text-sm">expand_more</span></button>
+            <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl rounded-lg py-2 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 flex flex-col">
+              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Groups</span>
+              <a href="/mens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Men's Ministry</a>
+              <a href="/womens-ministry.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Women's Ministry (G.L.O.W.)</a>
+              <a href="/prayer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Prayer Warriors</a>
+              <div class="h-px bg-slate-100 my-1 mx-4"></div>
+              <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest px-4 pt-2 pb-1">Outreach & Support</span>
+              <a href="/compassion.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Compassion Outreach</a>
+              <a href="/grief-share.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-[var(--color-primary)]">Grief Share</a>
+            </div>
+          </div>
+          <a href="/connect.html" class="text-sm font-semibold text-slate-600 hover:text-[var(--color-primary)] transition-colors">Connect</a>
+        </nav>
+        
+        <div class="flex items-center gap-4">
+          <a href="#" class="bg-[var(--color-primary)] text-white px-6 py-2.5 rounded text-sm font-bold tracking-wide hover:shadow-lg hover:shadow-[var(--color-primary)]/30 transition-all transform hover:-translate-y-0.5 uppercase">Give</a>
+          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-900 border border-slate-900 rounded-sm">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-slate-200">
+        <nav class="flex flex-col p-4 shadow-xl">
+          <a href="/index.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Home</a>
+          <a href="/staff.html" class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Staff</a>
+          <a href="/expect.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">What to Expect</a>
+          <a href="/sermons.html" class="p-3 text-slate-700 font-semibold border-b border-slate-100">Videos</a>
+          <div class="p-3 text-[var(--color-primary)] font-bold border-b border-slate-100">Ministries</div>
+          <a href="/mens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Men's Ministry</a>
+          <a href="/womens-ministry.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">G.L.O.W. Women</a>
+          <a href="/prayer.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-50">Prayer Warriors</a>
+          <a href="/compassion.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Compassion Outreach</a>
+          <a href="/grief-share.html" class="p-3 pl-6 text-slate-600 text-sm border-b border-slate-100">Grief Share</a>
+          <a href="/connect.html" class="p-3 text-slate-700 font-semibold">Connect</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-full pt-20">
+      
+      <!-- Minimalist Hero Header -->
+      <section class="border-b border-slate-200 bg-white relative overflow-hidden animate-on-scroll">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-[var(--color-primary)]/5 clip-diagonal hidden lg:block -z-0"></div>
+        <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10">
+          <div class="max-w-3xl">
+            <span class="text-[var(--color-primary)] font-black tracking-widest text-sm uppercase mb-6 block border-l-4 border-[var(--color-primary)] pl-4">Our Leadership</span>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 uppercase text-slate-900 leading-[0.9]">
+              Dedicated <span class="bg-slate-900 text-white px-2">Hearts</span>
+            </h1>
+            <p class="text-slate-500 text-xl md:text-2xl leading-relaxed font-light">
+              Serving our congregation and community. Get to know the pastors and directors who guide Greater Faith Grace Bible Church.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Staff Grid (Brutalist Geometry) -->
+      <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-8 md:gap-y-16">
+            
+            <!-- Dr. Samuel Rivers -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwd0KXNi01zF8zyfUZRkXFykn6LwOCkanI3TKgFB8xuxI6sBv7aBSkJwtc02-l7XL5LvI5RGRzLbi0NnIiia1RHqWDGsT9yeUEaRbeT_o9LI18KP_pi7srpiqZ0moOoCrnNS_5SDk3B5R7f515Hy3V1tDngGUm-n-jnQ8UT6GOO37tT-gG8t1Mr06WJafoQTwIPcdsNv6n5MxHjOx35XBc7xtGK6Z3wSjgVbrYXnu7aRgDzk7Y65CN1TwpWRRf_8K5hMRVMIa9DZM" alt="Dr. Samuel Rivers" />
+                <div class="absolute top-8 -left-2 bg-[var(--color-primary)] text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Strategic Team
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-[var(--color-accent)] font-black text-xs uppercase tracking-widest mb-2">Senior Pastor</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">Dr. Samuel Rivers</h3>
+                <blockquote class="relative pl-6 border-l-2 border-[var(--color-primary)] text-slate-500 text-sm leading-relaxed italic">
+                  "My heart is to see every soul find peace in His grace and live a life of purpose."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Sarah Jenkins -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll delay-100">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCfkjusCU7l5nf0ZqAGjLKkv_9rauD7xM-vMfhI1JsE7nHi2jrljdf8hebktjoO8feHRPPgi35DMi_soqwWq3p3x0eA27XJHonkt5R7yFqHTb4z8EXog-6aPzduvEHnKX2h5fWzYIslO82HHK68FaknLvbR9mpAhmMjfrZYveTZVpeCJtbTd_vm8FGzA0LwMUhjNhJot-hqVUu7cmXAzFFD0ayYP6IQ5SsGV57_ZQTuCr_pXkuWv_s4Aw1IAyR0HEhkzIJO64hu0g" alt="Sarah Jenkins" />
+                <div class="absolute top-8 -left-2 bg-slate-900 text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Pastoral Team
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-slate-400 font-black text-xs uppercase tracking-widest mb-2">Assistant Pastor</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">Sarah Jenkins</h3>
+                <blockquote class="relative pl-6 border-l-2 border-slate-300 group-hover:border-[var(--color-primary)] transition-colors text-slate-500 text-sm leading-relaxed italic">
+                  "Serving the broken and lifting the heavy-hearted through compassionate ministry."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Marcus Thorne -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll delay-200">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnULdKrURwjBZMw_knH9y43BffG9tk13_wTqHuaqXhFTpeSjgjH08tida5YsywbNoLOyzGx8kQcJxhXPwGZbW0xokrXyDmqxLCqo1RXrTBg5rK8_mZVe_W_Bq6Ol46ljYjwJEXxhU682Ibfk83I-8DGfppIDzNJlLrJowSvkwBCGrIOOXjXFv53OyYLO2QPSnOin66fawhmcwlz9BLVbqYtx000Orq-f1A3NnU1gpRLaDlOcZv2gc3KVvpPz1rbcdohkHW4mki5w" alt="Marcus Thorne" />
+                <div class="absolute top-8 -left-2 bg-slate-900 text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Pastoral Team
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-slate-400 font-black text-xs uppercase tracking-widest mb-2">Assistant Pastor</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">Marcus Thorne</h3>
+                <blockquote class="relative pl-6 border-l-2 border-slate-300 group-hover:border-[var(--color-primary)] transition-colors text-slate-500 text-sm leading-relaxed italic">
+                  "Building a foundation of faith for the next generation to stand firm upon."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Elizabeth Chen -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG3awCF2RbK8jBkOz24Dh14TD1h6fq8X2PI2ty2k1A5In5e0-eebc2fgDx8euI52fsoXzW_QFHEbBUUzQz9gBzmMhkhnR6KO_bgThBUH9AQcBzaAM2Md_zKNfSBKth5ZX8jq3H59yPtfgbse0WkRhwE55_cSVOdix1kGZJJS7PqAqQtEtLCVUwqgKnVecogoMniPWkh_extIhLaUniaOGqt8NCQKVaUXy6PhrGl214hRJUDfMdCMkZHf8nl1Au-dX_BR05zCi74R4" alt="Elizabeth Chen" />
+                <div class="absolute top-8 -left-2 bg-slate-900 text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Creative
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-[var(--color-primary)] font-black text-xs uppercase tracking-widest mb-2">Worship Director</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">Elizabeth Chen</h3>
+                <blockquote class="relative pl-6 border-l-2 border-[var(--color-primary)]/30 group-hover:border-[var(--color-primary)] transition-colors text-slate-500 text-sm leading-relaxed italic">
+                  "Leading our congregation into deep, authentic worship through the power of song."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- David Miller -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll delay-100">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJluPnvoVFwGt1Vo1DIbw7CJ3dTw4G-b7WPe8mZn0SOiCBZ00qpJ7BSD0GRqKYIanMKOhSp-ti40M7ibeKqOU7zRd6m0-eO_Qi9s74ONx--vDWwRuunaoWTmjwSNJmiKIQkgVGj7CL10anoUkMROXm5gqNXL6LUXNWLzdOaKw0xJEpFurS1pP93R3C3JK-yd6KAUmlhbjad0TVgrXqYGa_gCGKzdPn5orUtVcxy_v94YtXj2Gz20tGltRt8IzePKDh0Ea1YhgTUl0" alt="David Miller" />
+                <div class="absolute top-8 -left-2 bg-slate-900 text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Ministries
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-slate-400 font-black text-xs uppercase tracking-widest mb-2">Youth Ministry Lead</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">David Miller</h3>
+                <blockquote class="relative pl-6 border-l-2 border-slate-300 group-hover:border-[var(--color-primary)] transition-colors text-slate-500 text-sm leading-relaxed italic">
+                  "Empowering youth to live out their calling boldly in an ever-changing world."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Rachel Adams -->
+            <div class="group flex flex-col bg-white border border-slate-200 transition-all duration-500 hover:border-slate-300 animate-on-scroll delay-200">
+              <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 p-4">
+                <img class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_jEACsbEZzAo-QZAT5XO3KbJnXt2qYGl87qnI4cN3fRH1gSk56kyhvAVqDdhcZgk7KhaHo_Mn1c-GMcAMtTrInDEynGvyWHmCCY4v4yDXyVTUp6NEldLTPxM3g7zxhDhCiFVXfm4Mc6ssSMCb17s8L5xgV-0pEuIpt3r_8hiG6fStHJB_KCSEACdweTVV3ymwaKv9iLDf6pUwo0bdz4Ina2OeSBvierctFBtUE3xUy_k7eV7rJX5tvzU6EteIvxQ3g71f5MGAGZw" alt="Rachel Adams" />
+                <div class="absolute top-8 -left-2 bg-slate-900 text-white text-xs font-black px-4 py-2 uppercase tracking-widest shadow-xl">
+                  Ministries
+                </div>
+              </div>
+              <div class="p-8 border-t border-slate-100">
+                <p class="text-slate-400 font-black text-xs uppercase tracking-widest mb-2">Children's Ministry Lead</p>
+                <h3 class="text-slate-900 text-2xl font-black mb-6 uppercase tracking-tight">Rachel Adams</h3>
+                <blockquote class="relative pl-6 border-l-2 border-slate-300 group-hover:border-[var(--color-primary)] transition-colors text-slate-500 text-sm leading-relaxed italic">
+                  "Nurturing the seeds of faith in our little ones with love and patience."
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple Bold Ask Section -->
+      <section class="bg-[var(--color-navy-deep)] py-32 border-t-[12px] border-[var(--color-accent)] animate-on-scroll">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <span class="material-symbols-outlined text-6xl text-[var(--color-accent)] mb-8">question_answer</span>
+          <h2 class="text-white text-5xl md:text-7xl font-black mb-8 uppercase tracking-tighter">Ask The Team</h2>
+          <p class="text-slate-400 text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+            We are here to support you in your spiritual journey. Reach out to any of our staff members or visit our main office during weekly hours.
+          </p>
+          <a href="/connect.html" class="inline-flex items-center justify-center bg-[var(--color-primary)] text-white px-10 py-5 text-sm font-black uppercase tracking-widest hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-300 shadow-xl">
+            Contact Us
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="bg-[#040b15] pt-24 pb-12 text-white/70 overflow-hidden border-t-8 border-[var(--color-primary)]">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20 relative">
+        <span class="absolute right-0 top-0 text-[15rem] font-black uppercase text-white/[0.02] tracking-tighter leading-none select-none -z-10">GFGBC</span>
+        <div class="lg:col-span-5">
+          <img src="/assets/990012635160266755_gfgbcrialto-new-logo-2025-70x70.png-DwOEoPWY.png" class="h-16 w-16 brightness-0 invert opacity-90 mb-6" alt="GFGBC Logo" />
+          <h4 class="text-2xl font-black text-white mb-4">Greater Faith<br/>Grace Bible Church</h4>
+          <p class="text-slate-400 font-medium leading-relaxed max-w-sm">
+            Building a community of believers dedicated to the pursuit of truth, grace, and meaningful fellowship.
+          </p>
+        </div>
+        
+        <div class="lg:col-span-3">
+          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-accent)] mb-6">Navigation</h5>
+          <ul class="space-y-4 font-semibold text-sm">
+            <li><a href="/index.html" class="hover:text-white hover:pl-2 transition-all block">Home</a></li>
+            <li><a href="/expect.html" class="hover:text-white hover:pl-2 transition-all block">What to Expect</a></li>
+            <li><a href="/staff.html" class="hover:text-white hover:pl-2 transition-all block">Leadership Staff</a></li>
+            <li><a href="/sermons.html" class="hover:text-white hover:pl-2 transition-all block">Sermon Library</a></li>
+          </ul>
+        </div>
+        
+        <div class="lg:col-span-4">
+          <h5 class="text-xs font-black uppercase tracking-widest text-[var(--color-primary)] mb-6">Contact & Location</h5>
+          <ul class="space-y-4 font-semibold text-sm">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined outline p-2 rounded text-white/40">location_on</span>
+              <span class="pt-2">249 E. Randall Ave<br/>Rialto, CA 92376</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="material-symbols-outlined outline p-2 rounded text-white/40">mail</span>
+              <span>info@greaterfaithgrace.com</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="material-symbols-outlined outline p-2 rounded text-white/40">phone</span>
+              <span>(555) 123-4567</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium text-white/40">
+        <p>&copy; 2026 Greater Faith Grace Bible Church. All rights reserved.</p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

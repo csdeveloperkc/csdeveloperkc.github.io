@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "navy-deep": "#0a1128",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .video-gradient {
+            background: linear-gradient(180deg, rgba(16, 22, 34, 0) 0%, rgba(16, 22, 34, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<img alt="Greater Faith Grace Bible Church Logo" class="size-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdVVAAEAeODOKJtEdb1uMcipprDpIDyaFWB8LE_y9x3iSsc1xNBv22YI7b2fcVBLuTllcmCJ0Y0PUoX5JepOd-avNVVUe_feE44Rtnzwkr66eOTt6GMbQrUd5KjTbAXgdHuZJ8SAQOnMPRCdfLpq7W7bs5kCdf--Yosst_IwfmkVVd-95PgCnLa63OFHcJEG-vjUOCzPs1lbBIGAhwFtLkOo3v5MayiIJwF1QNEkaf9MaeaCtFWSrLlJp4Zor25bS1es0-NUOG4KY"/>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Greater Faith Grace Bible Church</h2>
+</div>
+<nav class="hidden xl:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1" href="#">Sermons</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Events</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<button class="flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Watch Live Now</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200 dark:border-slate-800" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcfyMggueY4gX2e6-PcQidPQGMbZlDhjGnXwynuqQMuvaK-qFoV5uBpQqu8nEfg0sDSDNVaiOYh4LJ9iJJ_-8PhbnXGK8k99sXVPgtaPQB2Y9ppyRmuVYZd5B3qVjxsz8SRC9AsPvKDEamnAgKIWHJZBI1fJHm9yhhgU7EUKvo2dDXrZvwXwwqjsVC5ikQ4fJkrxJf9Mr2WpMwSh3gxTmieAcDwF_4bBayBRDaidKKw8JO_BBXdKynE19TX99s71BhvLoJ6gnVTEk");'></div>
+</div>
+</header>
+<main class="flex-1">
+<section class="bg-slate-950 py-12 px-6 lg:px-40">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+<div>
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Most Recent Service</span>
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] mt-2">Sermon Video Library</h1>
+<p class="text-slate-400 text-lg font-normal mt-2">Living by Grace: Weekly teachings for your spiritual journey.</p>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden rounded-xl bg-black aspect-video shadow-2xl shadow-primary/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs2oTfP-FHzqgS01-zzVjnj4KCxiMGcQjLtSIbQ0P5XG83U8Qn4YPtI-2yEcih3tIDowtKDWo9m30GbTr398GVhFJ7ex0PmokjG85bKBiwjdEf1V_1m6jEXd_cAzggwFDlXAA_6287fyieFbCF0TlHH8UAsOl0vgFptvtlJ7hnTAlpTKv15Z0eDRbUNfBJI9ASeOSCtnwHP8gmS2Vp17fZtNfOvCigFex00_YM7ekq1Mf4Rp4nj7J7u53MGTHhDJmA1wXA9vDrcbM");'>
+</div>
+<div class="absolute inset-0 video-gradient"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="flex shrink-0 items-center justify-center rounded-full size-20 bg-primary text-white shadow-xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined !text-4xl fill-1">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-white/10 backdrop-blur-md text-white text-xs font-bold px-2 py-1 rounded">48:22</span>
+<span class="text-white/60 text-xs">• Recorded last Sunday</span>
+</div>
+<h2 class="text-white text-3xl font-bold mb-2">Faith in Action: Living the Word</h2>
+<p class="text-white/80 text-lg">Lead Pastor: Dr. Jonathan Rivers</p>
+</div>
+<div class="absolute inset-x-0 bottom-0 px-8 py-3 bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="flex h-1 items-center justify-center mb-2">
+<div class="h-1 w-1/3 rounded-full bg-primary"></div>
+<div class="h-1 flex-1 rounded-full bg-white/20 ml-1"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white cursor-pointer">play_arrow</span>
+<span class="material-symbols-outlined text-white cursor-pointer">volume_up</span>
+</div>
+<span class="material-symbols-outlined text-white cursor-pointer">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-40 py-10 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6 items-center">
+<div class="relative w-full md:flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-slate-800 border-none rounded-xl py-4 pl-12 pr-4 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Search by title, speaker, or scripture..." type="text"/>
+</div>
+<div class="flex gap-3 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+<button class="bg-primary text-white px-6 py-3 rounded-xl font-semibold whitespace-nowrap">All Services</button>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 whitespace-nowrap">Series</button>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 whitespace-nowrap">Speakers</button>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-6 py-3 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 whitespace-nowrap">Date</button>
+</div>
+</div>
+</section>
+<section class="px-6 lg:px-40 py-16 bg-background-light dark:bg-background-dark">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex justify-between items-center mb-10">
+<h3 class="text-2xl font-bold">Past Services</h3>
+<div class="flex items-center gap-2 text-slate-500 text-sm">
+<span>Showing 12 of 248 videos</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7TbR89S257n9FvKfT9f2rCzZ6Pe-AyCktkc6xwFFzK_LAXMKgYEDmFt5uPbWi3fur-dbxhrSVdSYFyOed6dvbNr3ZeveD8SUIHv4geBXnSds2sZ7QVP-KNXjB4gqaSwJqGhSRsEPQhx9qBHNTI8iJSiXh-FbHcEK387y0Bt4Djotg2kQhJpkzjQTmv_N8wO9X-qa6kIsLxVoDgMbyhP1iYIJwiP6p2hKiz2QAR2p4qfICoTud5yiXv7OVVmw7dEtM7xQLxwnf384");'>
+</div>
+<div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">42:15</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30">
+<span class="material-symbols-outlined text-white !text-5xl">play_circle</span>
+</div>
+</div>
+<div class="p-5">
+<div class="text-xs text-primary font-bold uppercase mb-2">Grace Series</div>
+<h4 class="text-lg font-bold mb-3 group-hover:text-primary transition-colors">The Unfailing Promise of Peace</h4>
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPDk28L-wzUeLSp_q2cndNLRaB3t83ovJwrMvs8GC-I7tasK1ZV3F4kkrLIyEJ_e6aQKYqo39POFu5ygvt6qVxHTLRJT8MM-JUCxD9EUhCeDpCDCXp5IxY2wbbLrBtoCJR1h0i8lyNMeJsOSiZCRyjW_OCsFFvDMuSyEOgDJ4UUXHPrZZ6wmyDby-U3-f1asgzB7YD45a3xydatmBDzcTVyakkEBypR-667dt1QOPr02fYX3Z0zcDljhK7R22rMYeFtLsUJzANmCI");'></div>
+<div>
+<p class="text-sm font-semibold">Pastor Michael Chen</p>
+<p class="text-xs text-slate-500">October 22, 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy6hOu5-WtEKROGinGYTl9F-JFw18B-Avv0YLAect4R0AJNqdjjpMPcS5RChAkgEA2STrU1RlSX6N3Ouu9vAkln3EQqaY3cNf3FeCasuQywOnvIc1V5JR6K5ITTMSnO3ANvDtccAvnfSoI_VfF3BhiK0ilHYj252smfuHlz7xyA5ZZdVQzMO-3XC6oJzDtchfYgrf2m_HFdrhdO99p9tQjun-5hAmf4qh0i3LdU6iJcJ1TVlQ51FuGxxda36vm8y3g9svg_G__8TY");'>
+</div>
+<div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">55:04</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30">
+<span class="material-symbols-outlined text-white !text-5xl">play_circle</span>
+</div>
+</div>
+<div class="p-5">
+<div class="text-xs text-primary font-bold uppercase mb-2">Community First</div>
+<h4 class="text-lg font-bold mb-3 group-hover:text-primary transition-colors">Walking Together in Strength</h4>
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwSiwrSBmZOqe5q3M3s2enhVlJMPgS_-Lc0SXWXB3puWQXC_rXOc5dP2gjPGUIpS_uu5Hn_YMUswv4zHUcjRBYtUs3iZebIUilSBfNmCKs4EiAZGWj1padlo6FNiThe2EW_AHgpzdbKX6_UDzHD-PgvBqBUXt3Dem9s4nq81Snuk-XD7mOpXtmr6iWMQEczdYKBlDMdz18W-CQfJO3jrsvmO64fRLEtkTFzlcBNARziLo_2RvekuQt_vS0ld-RXZXgJzsvaWqcHL4");'></div>
+<div>
+<p class="text-sm font-semibold">Sarah Jenkins</p>
+<p class="text-xs text-slate-500">October 15, 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATZdpQZuQ914vvrHM5Y-NnHuSISN5-Bh51Rfbj9aU08hnj4O8SSrq-a80Dt-ysHUswUJLYwv26BLl5-DW5XS9LlIAAYeCh6H_03hPpcjuC22-oiJhUhEtB59VoLg-l-VC0dPXjzPg12kJ1NebuFGAxNSm_ilIjUYHhhi7I-tsnlEzODd8xGNTTGPmD2DpcLS_sGTNkfgb6dPCX1sSvQVPBsdsG3sy6nAE6vtN7kTZZR6tgK-4zhPcOsCwl5pnoOBr7IqN_fD2VCYA");'>
+</div>
+<div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">38:50</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30">
+<span class="material-symbols-outlined text-white !text-5xl">play_circle</span>
+</div>
+</div>
+<div class="p-5">
+<div class="text-xs text-primary font-bold uppercase mb-2">New Beginnings</div>
+<h4 class="text-lg font-bold mb-3 group-hover:text-primary transition-colors">A Dawn of New Mercy</h4>
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7QbJXFcz6X_NeMIAHbRfLf6Py62O1_MQmgU7Oc2kPFyz-0bzGmWEY2JfA123NUiBJyuOjtG0cAW5S-Z7_gLSIZQSy-nnYVS-bpkSmscwAvgDBn1G-SVleiL53vciqlKnQKomlad8lvKtICP4YnIlvu0U4vRzxe_1bsOOCsbK_pOJ926NI7bABhATSQLbHw60R4VYQ_HRA4J_UATUZc3grdn4mKlIWGLauttHsnHu9qEHC0vDNyt8dCFMZwErh4j4x1ETALpO781o");'></div>
+<div>
+<p class="text-sm font-semibold">Dr. Jonathan Rivers</p>
+<p class="text-xs text-slate-500">October 8, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="flex items-center gap-2 px-8 py-3 rounded-xl font-bold transition-colors bg-primary text-white hover:bg-primary/90">
+<span>View Past Sermons</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-navy-deep text-white py-16">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Greater Faith Grace Bible Church Logo" class="h-10 w-10 object-contain brightness-0 invert shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT6vgjY8WvM_oGBtj8Aspy2KpSG8h8A7mv_1GZeOcsdUVkYAZ7CZAEQ4JBaGplDrZrC48NlYOsMZrxSimLG4L35CT4ROCmmEjnAMHfLuHC4MI5_LyfvewG_rAFnpQffsqevFhO_VZKlwu-4IPEOwC6WvTKFvKHAEHccmTwAGHeWDPYDGpCp-fw_qwjTxiWv5fmA8ev__1LzLzfQasq0XPYIC-PehteY63ysmYbd1UiuEYMXladuBAYsgqXAzY7O0ZMStvDcvL-hbM"/>
+<span class="text-xl font-bold">Greater Faith Grace Bible Church</span>
+</div>
+<p class="text-white/60 mb-8 max-w-sm">
+                    Building a community of believers dedicated to the pursuit of truth, grace, and meaningful fellowship.
+                </p>
+<div class="flex gap-4">
+<a class="bg-white/10 p-2 rounded-lg hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined !text-xl">social_leaderboard</span>
+</a>
+<a class="bg-white/10 p-2 rounded-lg hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined !text-xl">play_circle</span>
+</a>
+<a class="bg-white/10 p-2 rounded-lg hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined !text-xl">rss_feed</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-accent">Quick Links</h5>
+<ul class="space-y-4 text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Our Beliefs</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Leadership</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Ministries</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-accent">Contact</h5>
+<ul class="space-y-4 text-white/70"><li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+249 E. Randall Ave, Rialto, CA 92376
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        info@greaterfaithgrace.com
+                    </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">phone</span>
+                        (555) 123-4567
+                    </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+            © 2024 Greater Faith Grace Bible Church. All rights reserved.
+        </div>
+</footer>
+</div>
+</div>
+</body></html>
