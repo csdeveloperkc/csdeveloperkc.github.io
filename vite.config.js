@@ -16,7 +16,8 @@ export default defineConfig({
         prayer: resolve(__dirname, 'prayer.html'),
         sermons: resolve(__dirname, 'sermons.html'),
         staff: resolve(__dirname, 'staff.html'),
-        womens_ministry: resolve(__dirname, 'womens-ministry.html')
+        womens_ministry: resolve(__dirname, 'womens-ministry.html'),
+        give: resolve(__dirname, 'give.html')
       }
     }
   }
